@@ -24,21 +24,19 @@ import { MonumentsType } from './monuments_type/monuments_type.entity';
       username: 'postgres',
       password: 'E198373',
       host: 'localhost',
-      port: 5432
+      port: 5432,
     }),
     ErasModule,
     DynastyModule,
-    MonumentsTypeModule
+    MonumentsTypeModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule { }
 
-
-
 // user: "postgres",
 // password: "E198373",
 // host: "localhost",
 // port: 5432,
-// database: "EG_Antiq"
+// database: "EG_Antiq "
