@@ -1,0 +1,33 @@
+
+### Create New Dynasty
+POST http://localhost:3000/dynasty/newDynasty
+Content-Type: application/json
+
+{
+	"name_ar": "الأسرة الثانية",
+	"name_en": "Second Dynasty",
+	"from": "2686 BC",
+	"to": "2686 BC",
+	"era_id": 1
+}
+
+### Find Dynasty Using ID
+GET http://localhost:3000/dynasty/1
+
+### Find Dynasty using name_ar
+GET  http://localhost:3000/dynasty?name_en=Second Dynasty
+
+### Get All Dynasty
+GET  http://localhost:3000/dynasty
+
+### Remove Dynasty Using ID
+DELETE  http://localhost:3000/dynasty/19
+
+### Update Dynasty
+PATCH  http://localhost:3000/dynasty/16
+Content-Type: application/json
+
+{
+    "name_en": "Eachawy view",
+    "era_id": 10
+}

@@ -1,0 +1,31 @@
+
+### Create New Era
+POST http://localhost:3000/eras/newEra
+Content-Type: application/json
+
+{
+    "name_ar": "الآثار الساسانية ",
+    "name_en": "Sasanian antiquities",
+    "from": "323 AD",
+    "to": "621 AD"
+}
+
+### Find Era Using ID
+GET http://localhost:3000/eras/2
+
+### Find Era using name_ar
+GET  http://localhost:3000/eras?name_ar=Ar_3
+
+### Get All Eras
+GET  http://localhost:3000/eras
+
+### Remove Era Using ID
+DELETE  http://localhost:3000/eras/18
+
+### Update Era
+PATCH  http://localhost:3000/eras/19
+Content-Type: application/json
+
+{
+    "name_ar": "Ar_3"
+}

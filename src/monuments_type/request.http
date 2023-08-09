@@ -1,0 +1,29 @@
+
+### Create New Monuments Type
+POST http://localhost:3000/monumentsType/newMonumentsType
+Content-Type: application/json
+
+{
+    "name_ar": "المعابد",
+    "name_en": "Temples"
+}
+
+### Find Monuments Type Using ID
+GET http://localhost:3000/monumentsType/1
+
+### Find Monuments Type using name_ar
+GET  http://localhost:3000/monumentsType?name_ar=العواصم
+
+### Get All Monuments Type
+GET  http://localhost:3000/monumentsType
+
+### Remove Monuments Type Using ID
+DELETE  http://localhost:3000/monumentsType/18
+
+### Update Monuments Type
+PATCH  http://localhost:3000/monumentsType/2
+Content-Type: application/json
+
+{
+    "name_en": "Temples"
+}
