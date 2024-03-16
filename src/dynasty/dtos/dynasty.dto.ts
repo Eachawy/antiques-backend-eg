@@ -13,6 +13,9 @@ export class DynastyDto {
     @Expose()
     to: string;
 
+    @Expose()
+    era_id: number;
+
     // @Expose()
     // era_id: number;
 }
